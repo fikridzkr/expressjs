@@ -1,0 +1,12 @@
+<h1>Hello Express</h1>
+<h2>Hello <%= nama%></h2>
+
+<h2>Daftar Siswa</h2>
+<% if (siswa.length < 1) { %>
+<h5>Data masih kosong</h5>
+<% } else { %> <% siswa.forEach( s => { %>
+<ul>
+  <li>Nama: <%= s.nama %></li>
+  <li>Email: <%= s.email %></li>
+</ul>
+<% }) %> <% } %>
